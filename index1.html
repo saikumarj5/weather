@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#register" class="nav-link" onclick="showPage('register')">Register</a>
+        <a href="#login" class="nav-link" onclick="showPage('login')">Login</a>
+        <a href="#about" class="nav-link" onclick="showPage('about')">About</a>
+        <a href="#home" class="nav-link" onclick="showPage('home')">Home</a>
+        <a href="#delete" class="nav-link" onclick="logoutAndRefresh()">Delete</a>
+    </nav>
+
+<div id="home" class="page" style="display: none;">
+    <h1>Weather Forecast</h1>
+    <input type="text" id="city" placeholder="Enter city">
+    <button onclick="getWeather()">Get Weather</button>
+    <button onclick="getCurrentLocationWeather()">Use Precise Location</button>
+    <div id="weather-details"></div>
+    <canvas id="forecast-chart" width="400" height="200"></canvas>
+</div>
+
+
+    <div id="register" class="page">
+        <h1>Register</h1>
+        <form id="register-form">
+            <input type="text" id="reg-name" placeholder="Name" required><br>
+            <input type="email" id="reg-email" placeholder="Email" required><br>
+            <input type="password" id="reg-password" placeholder="Password" required><br>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already registered? <a href="#login" onclick="showPage('login')">Go to Login</a></p>
+    </div>
+
+    <div id="login" class="page" style="display: none;">
+        <h1>Login</h1>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="Email" required><br>
+            <input type="password" id="login-password" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don’t have an account? <a href="#register" onclick="showPage('register')">Register here</a></p>
+    </div>
+
+    <div id="about" class="page" style="display: none;">
+        <h1>About</h1>
+        <p>This is a weather forecasting application that provides hourly weather updates.</p>
+    </div>
+
+    <script>
+        function logoutAndRefresh() {
+            // Logic for logging out (e.g., clearing session data) can be added here
+            alert(' The account is deleted.');
+            location.reload();
+            document.body.innerHTML += '<p style="text-align: center; color: red;">The account is deleted.</p>';
+        }
+    </script>
+
+    <script src="script1.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,233 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #0078D7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.page {
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005BB5;
+}
+/* General styles for the form */
+#register {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields */
+#register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect on input fields */
+#register-form input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    outline: none;
+}
+
+/* Submit button */
+#register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Hover effect on button */
+#register-form button:hover {
+    background-color: #357ab7;
+}
+
+/* Active effect on button */
+#register-form button:active {
+    transform: scale(0.98);
+}
+
+/* Error states (optional) */
+#register-form input:invalid {
+    border-color: #3cd0e7;
+    box-shadow: 0 0 5px rgba(60, 183, 231, 0.5);
+}
+/* General styles for the page */
+#home {
+    font-family: Arial, sans-serif;
+    background-color: #eef6ff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading styles */
+#home h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Input field */
+#city {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus state for input */
+#city:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+/* Button styles */
+#home button:last-child {
+    margin-left: 10px;
+    background-color: #28a745;
+}
+
+#home button:last-child:hover {
+    background-color: #218838;
+}
+
+
+/* Weather details container */
+#weather-details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #34495e;
+}
+
+/* Canvas styles (optional) */
+#forecast-chart {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+/* General styles for the login page */
+#login {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading styles */
+#login h1 {
+    color: #343a40;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input fields */
+#login-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect for input fields */
+#login-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Button styles */
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect on button */
+#login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Active effect on button */
+#login-form button:active {
+    transform: scale(0.98);
+}
+
+/* Error states for input fields (optional) */
+#login-form input:invalid {
+    border-color: #07aaea;
+    box-shadow: 0 0 5px rgba(23, 161, 152, 0.5);
+}
